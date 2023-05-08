@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+
+}
+
+
+.main{
+	width: 100%;
+	height: 100%;
+	background-color: #313338;
+}
+.text-main{
+	position: relative;
+	text-align: center;
+
+	color: #fff;
+	 z-index: 99999999;
+}
+.center-line {
+  border-left: 500px solid #232428;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+   z-index: 3;
+}
+.center-box {
+  border-left: 460px solid #111214;
+  height: 99vh;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+   z-index: 5;
+}
+.container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.text-main {
+  white-space: pre-wrap;
+  text-align: center;
+}
+.top-panel {
+  background-color: #333333;
+  height: 50px;
+  width: 100%;
+  /* other styles as needed */
+}
+.top-panel {
+  background-color: #333333;
+  height: 5px;
+  width: 100%;
+  /* другие стили по мере необходимости */
+}
+nav {
+  background-color: #333; /* sets the background color of the nav element */
+  color: #fff; /* sets the font color of the nav element */
+  position: fixed; /* fixes the position of the nav element */
+  top: 0; /* positions the nav element at the top of the page */
+  width: 100%; /* sets the width of the nav element to 100% of the page width */
+}
+
+nav ul {
+  list-style: none; /* removes the bullet points from the list items */
+  margin: 0; /* removes the default margin from the list */
+  padding: 0; /* removes the default padding from the list */
+}
+
+nav li {
+  display: inline-block; /* displays the list items horizontally */
+  margin: 0 10px; /* adds some margin between the list items */
+}
+
+nav a {
+  color: #fff; /* sets the font color of the links */
+  display: block; /* makes the links cover the entire list item */
+  padding: 10px; /* adds some padding to make the links clickable */
+  text-decoration: none; /* removes the underline from the links */
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.rectangle {
+  height: 10px;
+  background-color: silver;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+a {
+  font-size: 24px;
+  display: block;
+  text-align: center;
+}
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+      }
+.blue-rectangle {
+  background-color: #b0addb;
+  width: 500px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+    z-index: 99999;
+}
+      #myCanvas {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+      {
+
+

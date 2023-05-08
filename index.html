@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my card</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stayle.css">
+</head>
+
+<body>
+	    <canvas id="myCanvas"></canvas>
+    <script>
+const canvas = document.querySelector("#myCanvas");
+const ctx = canvas.getContext("2d");
+
+let x = canvas.width / 2;
+let y = canvas.height / 2;
+let radius = 30;
+let vx = 5;
+let vy = 4;
+let ax = 0.2;
+let ay = 0.2;
+
+function drawCircle() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0, Math.PI * 2);
+  ctx.fillStyle = "blue";
+  ctx.fill();
+  ctx.closePath();
+}
+
+function update() {
+  vx += ax;
+  vy += ay;
+  x += vx;
+  y += vy;
+  if (x + radius > canvas.width || x - radius < 0) {
+    vx = -vx;
+    x += vx;
+  }
+  if (y + radius > canvas.height || y - radius < 0) {
+    vy = -vy;
+    y += vy;
+  }
+  drawCircle();
+}
+
+function init() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  window.addEventListener("resize", function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+  setInterval(update, 10);
+  ctx.fillStyle = "blue";
+}
+
+init();
+
+canvas.style.position = "absolute";
+canvas.style.top = "0px";
+canvas.style.left = "0px";
+canvas.style.zIndex = "9999";
+
+
+    </script>
+	    <div class="blue-rectangle">
+	    	
+	    </div>
+	<div class="rectangle"></div>
+
+	<header>
+  <div class="rectangle"></div>
+</header>
+	<div class="top-panel">
+  <!-- your content goes here -->
+   </div>
+
+	<div class="center-box"></div>
+
+	<div class="center-line">
+		
+	</div>
+	<div class="main">
+
+		<div class = "text-main">
+					<img src="1.png" width="250" heihgt="250"></img>
+
+	   <h1>Ionecoolstudio#1430</h1>
+	   <p>"Разработчики игр должны быть
+	 и муравьями и художниками одновременно"
+	 - Джейсон Шрайер, Blood, Sweat, and 
+	     Pixels</p>
+	    <h1>Мои проекты</h1>
+	    <a href="https://clck.ru/342h38">yandex game</a>
+	    <a href="https://vancoolstudio.itch.io/dreaming-of-the-skydreaming-of-the-sky">my android game</a>
+	    <a href="https://vancoolstudio.itch.io/blooming-farm">my game for game jam</a>
+	    <h1>я в сетях</h1>
+	    	<img src="2.png" width="250" heihgt="250"></img>
+	    	<a href="https://steamcommunity.com/profiles/76561199284659147/">steam</a>
+	    <audio controls>
+  <source src="Rick_Astley_-_Never_Gonna_Give_You_Up_47958276.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<h1>Играет в игру</h1>
+	   <p>Minecraft</p>
+	   <img src="3.png" width="250" heihgt="250"></img>
+	   <label for="name">Введите ваше имя:</label>
+<input type="text" id="name" name="name">
+<button onclick="greetUser()">Поприветствовать</button>
+<p id="greeting-message"></p>
+
+<script>
+function greetUser() {
+  var name = document.getElementById("name").value;
+  var greetingMessage = document.getElementById("greeting-message");
+  greetingMessage.innerHTML = "Привет, " + name + "!";
+}
+</script>
+
+	    </div>
+    </div>
+    <nav>
+  <ul>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+
+</body>
+</html>
